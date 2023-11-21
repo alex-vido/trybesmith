@@ -16,7 +16,7 @@ const createOrder = async (req: Request, res: Response, next: NextFunction) => {
 
 const allOrdersController = async (req: Request, res: Response, next: NextFunction) => {
   try {
-    const result = await OrderService.OrderService.allOrders();
+    const result = await OrderService.OrderService.allOrders();    
     res.status(200).json(result);
   } catch (error) {
     next(error);
