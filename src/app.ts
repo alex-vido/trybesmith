@@ -9,4 +9,6 @@ app.use('/products', router.productRouter);
 
 app.use('/orders', router.orderRouter);
 
+app.use('/login', router.loginRouter);
+
 export default app;

@@ -1,6 +1,5 @@
 import { Order } from '../types/Order';
 import OrderModel, { OrderSequelizeModel } from '../database/models/order.model';
-// import ProductModel from '../database/models/product.model';
 import ProductService from './product.service';
 
 const createOrder = async (product: Order): Promise<OrderSequelizeModel> => {

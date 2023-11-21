@@ -1,4 +1,4 @@
-type ServiceResponseErrorType = 'INVALID_DATA' | 'UNAUTHORIZED' | 'NOT_FOUND';
+type ServiceResponseErrorType = 400 | 404 | 422 | 401;
 
 export type ServiceResponseError = {
   status: ServiceResponseErrorType, 
@@ -6,7 +6,7 @@ export type ServiceResponseError = {
 };
 
 export type ServiceResponseSuccess<T> = {
-  status: 'SUCCESSFUL', 
+  status: 200, 
   data: T
 };
 
