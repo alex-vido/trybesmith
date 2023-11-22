@@ -1,15 +1,15 @@
 import { Router } from 'express';
-import OrderController from '../controllers';
+import orderController from '../controllers/order.controller';
 
 const router = Router();
 router.post(
   '/', 
-  OrderController.orderController.createOrder,
+  orderController.createOrder,
 );
 
 router.get(
   '/',
-  OrderController.orderController.allOrdersController,
+  orderController.allOrdersController,
 );
 
 export = router;
