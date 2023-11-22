@@ -3,8 +3,7 @@ import chai, { expect } from 'chai';
 import chaiHttp from 'chai-http';
 import productModel from '../../../src/database/models/product.model';
 import app from '../../../src/app';
-import { productListMock, productResultMock } from '../../mocks/products.mocks';
-import e from 'express';
+import { productListMock } from '../../mocks/products.mocks';
 
 chai.use(chaiHttp);
 

@@ -22,4 +22,4 @@ export const allOrdersMock = [
       5
     ]
   }
-]
+];
